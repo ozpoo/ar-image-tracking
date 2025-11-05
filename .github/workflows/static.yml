@@ -24,6 +24,9 @@ jobs:
         run: pnpm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
+        with:
+          source: ./
+          destination: ./_site
   deploy:
     environment:
       name: github-pages
