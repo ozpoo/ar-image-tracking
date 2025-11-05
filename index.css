@@ -1,0 +1,9 @@
+* {
+  color-scheme: light dark;
+}
+
+body {
+  &[loading] {
+    opacity: 0;
+  }
+}
