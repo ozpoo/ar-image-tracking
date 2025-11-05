@@ -7,15 +7,15 @@ export default defineConfig(async ({ command }) => ({
   base: '/ar-image-overlay/',
   build: {
     outDir: path.resolve(__dirname, 'dist')
-  },
-  plugins: [
-    viteStaticCopy({
-      targets: [
-        {
-          src: 'assets/targets/*',
-          dest: 'assets/targets'
-        }
-      ]
-    })
-  ]
+  }
+  // plugins: [
+  //   viteStaticCopy({
+  //     targets: [
+  //       {
+  //         src: 'assets/targets/*',
+  //         dest: 'assets/targets'
+  //       }
+  //     ]
+  //   })
+  // ]
 }))
