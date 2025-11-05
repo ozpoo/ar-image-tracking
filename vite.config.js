@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
 import path from 'node:path'
+import { defineConfig } from 'vite'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default defineConfig(async ({ command }) => ({
@@ -11,8 +11,8 @@ export default defineConfig(async ({ command }) => ({
     viteStaticCopy({
       targets: [
         {
-          src: 'assets/*',
-          dest: 'assets'
+          src: 'assets/targets/*',
+          dest: 'assets/targets'
         }
       ]
     })
