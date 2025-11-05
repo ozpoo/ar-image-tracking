@@ -7,14 +7,4 @@ export default defineConfig(async ({ command }) => ({
   build: {
     outDir: path.resolve(__dirname, 'dist')
   }
-  // plugins: [
-  //   viteStaticCopy({
-  //     targets: [
-  //       {
-  //         src: 'assets/targets/*',
-  //         dest: 'assets/targets'
-  //       }
-  //     ]
-  //   })
-  // ]
 }))
